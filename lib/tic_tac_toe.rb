@@ -39,7 +39,6 @@ end
 end
 
   def turn_count
-
     @board.count do |token|
       token == "X" || index == "O"
     end
