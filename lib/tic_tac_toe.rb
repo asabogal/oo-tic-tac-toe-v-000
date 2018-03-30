@@ -65,7 +65,9 @@ WIN_COMBINATIONS.detect do |win_combo|
   @board[win_combo[0]] == @board[win_combo[1]] &&
   @board[win_combo[1]] == @board[win_combo[2]] &&
   position_taken?(win_combo[0])
+  end
 end
-end
+
+
 
 end
