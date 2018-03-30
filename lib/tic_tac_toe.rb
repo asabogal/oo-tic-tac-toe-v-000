@@ -82,5 +82,10 @@ end
   won? || draw? || full?
   end
 
+  def winner
+  if winning_token = won?
+  board[winning_token[0]]
+  end
+  end
 
 end
