@@ -39,13 +39,18 @@ end
 end
 
   def turn_count
-  turn_number = 0
-  @board.each do |index|
-  if index == "X" || index == "O"
-    turn_number += 1
+
+    @board.count do |token|
+      token == "X" || index == "O"
     end
-  end
-  return turn_number
-  end
+
+  # turn_number = 0
+  # @board.each do |index|
+  # if index == "X" || index == "O"
+  #   turn_number += 1
+  #   end
+  # end
+  # return turn_number
+  # end
 
 end
