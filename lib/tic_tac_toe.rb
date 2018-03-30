@@ -84,7 +84,7 @@ end
 
   def winner
   if winning_token = won?
-  board[winning_token[0]]
+  @board[winning_token[0]]
   end
   end
 
