@@ -60,4 +60,11 @@ class TicTacToe
   end
 end
 
+if won?
+  puts "Congratulations #{winner(board)}!"
+else draw?
+  puts "Cat's Game!"
+end
+end
+
 end
