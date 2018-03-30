@@ -20,7 +20,7 @@ class TicTacToe
   puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
   puts "-----------"
   puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
-end
+  end
 
   def input_to_index(user_input)
   index = user_input.to_i - 1
@@ -36,7 +36,7 @@ end
 
   def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
-end
+  end
 
   def turn_count
     @board.count do |token|
