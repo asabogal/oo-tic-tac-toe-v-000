@@ -26,7 +26,7 @@ end
   index = user_input.to_i - 1
   end
 
-  def move(@board, index, player)
+  def move(index, player)
   @board[index] = player
   end
 
